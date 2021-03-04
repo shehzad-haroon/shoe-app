@@ -1,13 +1,130 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  padding:0%;
+  margin: 0%;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+  font-family:Helvetica;
+  font-weight: lighter;
+}
+.productcontainer{
+  display: flex;
+  flex-wrap: wrap;
+}
+.inner{
+  color: black;
+  text-decoration: none;
+  width: 300px;
+  align-items: center;
+  text-align: center;
+  margin: 14px;
+  box-shadow: 0 0 10px black;
+}
+.inner:hover{
+ background-color: whitesmoke;
+}
+.inner-list{
+  text-align: center;
+  box-shadow: black;
+}
+.inner-list img{
+  width: 320px;
+  height: 320px;
+}
+.product{
+  text-transform: uppercase;
+  font-size: 200%;
+  letter-spacing: 20px;
+  font-weight: bolder;
+  color: white;
+  text-align: center;
+  background-color: teal;
+}
+/* //home css */
+.img{
+  margin-top: -25%;
+}
+.name{
+  text-align: center;
+  align-items: flex-start;
+  width: 460px;
+  position: relative;
+  float: right;  
+}
+.name p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 220%;
+  color:black;
+float: right;
+font-weight: bolder;
+background-color: whitesmoke;
+text-align: center;
+  margin-top: -90%;
+  text-align: center;
+}
+.shoe{
+  font-size: 200%;
+}
+/* //Aboutus */
+.para{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: white;
+  padding: 0px;
+  margin: 0px;
+  color: teal;
+  font-size: 200%;
+  width: 100%;
+}
+.about{
+  padding: 9%;
+  background-color: white;
+}
+/* responsive */
+@media screen and (max-width: 600px) {
+  .inner {
+    color: black;
+  text-decoration: none;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+  margin: 10px;
+  box-shadow: 0 0 10px rgb(31, 29, 29);
+  }
+  .inner-list{
+    padding: 0%;
+    margin: 0%;
+    height: auto;
+  box-shadow: 0 0 10px rgb(236, 6, 6);
+  align-items: center;
+  text-align: center;
+    width: 100%;
+    text-align: center;
+  }
+  .img{
+    margin-top: 0%;
+    height: 500px;
+    width: 100%;
+  }
+  .name{
+    display: none;
+    text-align: center;
+    align-items: flex-start;
+    width: 100px;
+    position: relative;
+    float: right;  
+  }
+  .name p{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color:black;
+  float: right;
+  font-weight: bolder;
+  background-color: whitesmoke;
+  text-align: center;
+    text-align: center;
+    width: 70%;
+    height: 0%;
+  }
+  .shoe{
+    display: none;
+  }
 }
